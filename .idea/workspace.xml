@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4904112-c88e-4ea4-9acf-9f74bb521dcf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung6.java" afterDir="false" />
+    <list default="true" id="f4904112-c88e-4ea4-9acf-9f74bb521dcf" name="Changes" comment="Initialer Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/atruvia/schupranov2022/Uebung6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +60,17 @@
       <updated>1665146876187</updated>
       <workItem from="1665146878269" duration="5122000" />
       <workItem from="1665706353983" duration="3474000" />
-      <workItem from="1666183546008" duration="638000" />
+      <workItem from="1666183546008" duration="6672000" />
+      <workItem from="1666257532281" duration="2771000" />
     </task>
+    <task id="LOCAL-00001" summary="Initialer Commit">
+      <created>1666184240986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1666184240986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,5 +86,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initialer Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialer Commit" />
   </component>
 </project>

@@ -2,15 +2,30 @@ package de.atruvia.schupranov2022;
 
 import java.util.Scanner;
 
+/*
+ * Übung 6: Methoden
+ *
+ * Den bisherigen Code haben wir ausschließlich in die main()-Methode geschrieben.
+ * Um unser Programm etwas übersichtlicher zu gestalten, empfiehlt es sich,
+ * die einzelnen Teile in Methoden auszulagern.
+ *
+ * Extrahiere den existierenden Code der main()-Methode in neue "static void"-Methoden:
+ *  - leseWerteEin()
+ *  - gebeVariablenAus()
+ *  - fuehreBerechnungDurch()
+ *  - gebeEntwicklungAus()
+ *
+ * Rufe nun diese Methoden nacheinander in der main()-Methode auf.
+ */
 public class Uebung6
 {
     /* --- Deklaration und Initialisierung der benötigten Variablen --- */
-    static double monatlicheEinzahlung = 200;      // Höhe der monatlichen Einzahlungen in Euro
-    static double zinssatz = 4.5;                  // Zinssatz in Prozent
-    static int laufzeit = 72;                      // Mindestlaufzeit/Dauer der Sparphase in Monaten
+    static double monatlicheEinzahlung = 200;       // Höhe der monatlichen Einzahlungen in Euro
+    static double zinssatz = 4.5;                   // Zinssatz in Prozent
+    static int laufzeit = 72;                       // Laufzeit in Monaten
 
-    static double bausparguthaben = 0.0;           // Aktuelles Bausparguthaben (angespartes Vermögen) in Euro
-    static double[] bausparguthabenEntwicklung = new double[laufzeit];  // double-Array, in welchem die Entwicklung gespeichert wird
+    static double kontostand = 0.0;                 // Aktueller Kontostand in Euro
+    static double[] kontostandEntwicklung;          // double-Array, in welchem die Entwicklung gespeichert wird
 
     public static void main(String[] args)
     {
@@ -36,10 +51,12 @@ public class Uebung6
         System.out.println("Zinssatz in Prozent: ");
         zinssatz = scanner.nextDouble();
 
-        System.out.println("Mindestlaufzeit/Dauer der Sparphase in Monaten: ");
+        System.out.println("Laufzeit in Monaten: ");
         laufzeit = scanner.nextInt();
 
         System.out.println();
+
+        kontostandEntwicklung = new double[laufzeit];
     }
 
     static void gebeVariablenAus()
@@ -48,12 +65,12 @@ public class Uebung6
         System.out.println("--- Berechnungsgrundlage ---");
         System.out.println("Höhe der monatlichen Einzahlungen: " + monatlicheEinzahlung + " EUR");
         System.out.println("Zinssatz: " + zinssatz + " %");
-        System.out.println("Mindestlaufzeit/Dauer der Sparphase: " + laufzeit + " Monate");
+        System.out.println("Laufzeit: " + laufzeit + " Monate");
 
-        /* --- Überprüfen, ob die Mindestlaufzeit größer null ist --- */
+        /* --- Überprüfen, ob die Laufzeit größer null ist --- */
         if (laufzeit == 0)
         {
-            System.out.println("Die Mindestlaufzeit/Dauer der Sparphase darf nicht null sein!");
+            System.out.println("Die Laufzeit darf nicht null sein!");
         }
 
         System.out.println();
@@ -61,27 +78,27 @@ public class Uebung6
 
     static void fuehreBerechnungDurch()
     {
-        /* --- Durchführung der Berechnung und Ausgabe des monatlichen Bausparguthabens --- */
+        /* --- Durchführung der Berechnung und Speichern des jeweiligen Kontostands --- */
         for (int aktuellerMonat = 1; aktuellerMonat <= laufzeit; aktuellerMonat++)
         {
-            bausparguthaben = bausparguthaben + monatlicheEinzahlung;
+            kontostand = kontostand + monatlicheEinzahlung;
 
             if (aktuellerMonat % 12 == 0)
             {
-                double zinsen = bausparguthaben * zinssatz / 100;
-                bausparguthaben = bausparguthaben + zinsen;
+                double zinsen = kontostand * zinssatz / 100;
+                kontostand = kontostand + zinsen;
             }
 
-            bausparguthabenEntwicklung[aktuellerMonat - 1] = bausparguthaben;
+            kontostandEntwicklung[aktuellerMonat - 1] = kontostand;
         }
     }
 
     static void gebeEntwicklungAus()
     {
-        /* --- Ausgabe des monatlichen Bausparguthabens durch Iterieren über das Array --- */
-        for (int i = 0; i < bausparguthabenEntwicklung.length; i++)
+        /* --- Ausgabe des jeweiligen Kontostands durch Iterieren über das Array --- */
+        for (int i = 0; i < kontostandEntwicklung.length; i++)
         {
-            System.out.println("Monat: " + (i + 1) + " | Aktuelles Bausparguthaben: " + bausparguthabenEntwicklung[i]);
+            System.out.println("Monat: " + (i + 1) + " | Aktueller Kontostand: " + kontostandEntwicklung[i] + " EUR");
         }
     }
 }
